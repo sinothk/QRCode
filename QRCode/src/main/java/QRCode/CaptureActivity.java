@@ -48,6 +48,7 @@ import QRCode.zxing.camera.CameraManager;
 import QRCode.zxing.decoding.CaptureActivityHandler;
 import QRCode.zxing.decoding.InactivityTimer;
 import QRCode.zxing.view.ViewfinderView;
+import com.google.zxing.ResultPointCallback;
 
 /**
  * Initial the camera
