@@ -5,6 +5,7 @@ import android.content.DialogInterface;
 import android.os.Bundle;
 import android.support.v7.app.AlertDialog;
 import android.text.TextUtils;
+import android.view.View;
 import android.widget.Toast;
 
 import QRCode.CaptureActivity;
@@ -24,7 +25,7 @@ public class SimpleCaptureActivity extends CaptureActivity {
         mActivity = this;
         super.onCreate(savedInstanceState);
 
-//        galleryTv.setV
+        galleryTv.setVisibility(View.INVISIBLE);
     }
 
     @Override

@@ -27,5 +27,5 @@ dependencies {
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
 
 //    api project(':QRCode')
-    implementation 'com.github.sinothk:QRCode:1.6'
+    implementation 'com.github.sinothk:QRCode:2.0'
 }
