@@ -26,6 +26,6 @@ dependencies {
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
 
-    api project(':QRCode')
-//    api 'com.github.sinothk:QRCode:1.5'
+//    api project(':QRCode')
+    implementation 'com.github.sinothk:QRCode:1.6'
 }

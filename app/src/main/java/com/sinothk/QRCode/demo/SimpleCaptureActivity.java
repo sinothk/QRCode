@@ -23,6 +23,8 @@ public class SimpleCaptureActivity extends CaptureActivity {
     public void onCreate(Bundle savedInstanceState) {
         mActivity = this;
         super.onCreate(savedInstanceState);
+
+//        galleryTv.setV
     }
 
     @Override

@@ -77,7 +77,7 @@ public class CaptureActivity extends Activity implements Callback {
     private boolean flashLightOpen = false;
     private ImageView backIbtn;
     private ImageButton flashIbtn;
-    private TextView galleryTv;
+    protected TextView galleryTv;
 
     /**
      * Called when the activity is first created.
