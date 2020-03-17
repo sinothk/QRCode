@@ -2,9 +2,14 @@ package com.sinothk.QRCode.demo;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
+
+import androidx.appcompat.app.AppCompatActivity;
+
 import android.view.View;
 import android.widget.Button;
+
+import com.sinothk.QRCode.ScanerCode.ActivityScanerCode;
+import com.sinothk.QRCode.demo.create.QrCodeCreateDemoMainActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -15,11 +20,27 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        findViewById(R.id.createCode_btn).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(MainActivity.this, ActivityCreateQRCode.class);
+                startActivity(i);
+            }
+        });
+
+        findViewById(R.id.createCode_btn2).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(MainActivity.this, QrCodeCreateDemoMainActivity.class);
+                startActivity(i);
+            }
+        });
+
         final Button qrCodeBtn = (Button) findViewById(R.id.qrcode_btn);
         qrCodeBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(MainActivity.this, SimpleCaptureActivity.class);
+                Intent i = new Intent(MainActivity.this, ActivityScanerCode.class);
                 MainActivity.this.startActivityForResult(i, REQUEST_QR_CODE);
             }
         });

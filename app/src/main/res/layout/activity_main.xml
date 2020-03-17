@@ -7,8 +7,21 @@
     android:orientation="vertical">
 
     <Button
+        android:id="@+id/createCode_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="生成" />
+
+    <Button
+        android:id="@+id/createCode_btn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="生成(带头像)" />
+
+    <Button
         android:id="@+id/qrcode_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="扫一扫" />
+
 </LinearLayout>
